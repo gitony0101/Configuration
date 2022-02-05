@@ -9,12 +9,11 @@
 			"path": "../../Machine-Learning-Notes"
 		},
 		{
-			"name": "Reference",
-			"path": ".."
-		},
-		{
 			"name": "data_local",
 			"path": "../../data_local"
+		},
+		{
+			"path": "../../Reference"
 		}
 	],
 	"settings": {}
