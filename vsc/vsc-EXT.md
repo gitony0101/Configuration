@@ -1,5 +1,7 @@
 ## VSC EXT
 
+`code --list-extensions`
+
 code --list-extensions
 alefragnani.Bookmarks
 alefragnani.project-manager
