@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "X4DS",
+			"path": "../../X4DS"
+		},
+		{
+			"name": "Machine-Learning-Notes",
+			"path": "../../Machine-Learning-Notes"
+		},
+		{
+			"name": "Reference",
+			"path": ".."
+		},
+		{
+			"name": "data_local",
+			"path": "../../data_local"
+		}
+	],
+	"settings": {}
+}
