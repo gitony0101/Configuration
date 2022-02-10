@@ -2,8 +2,7 @@ export HOMEBREW_NO_AUTO_UPDATE=true
 
 if type brew &>/dev/null; then
     FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-    autoload -Uz compinit
-    compinit
+    autoload -Uz compinit && compinit
 fi
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh

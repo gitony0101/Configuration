@@ -2,7 +2,6 @@
 
 zmodload zsh/zprof
 zmodload zsh/mathfunc
-autoload -Uz compinit && compinit
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
