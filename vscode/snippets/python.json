@@ -1,0 +1,42 @@
+{
+  "npms": {
+    "prefix": "npms",
+    "description": "",
+    "body": [
+      "import pandas as pd",
+      "import numpy as np",
+      "import matplotlib.pyplot as plt",
+      "import seaborn as sns",
+      ""
+    ]
+  },
+  "stats": {
+    "prefix": "stats",
+    "description": "",
+    "body": [
+      "from scipy.stats import stats",
+      ""
+    ]
+  },
+  "sy": {
+    "prefix": "sy",
+    "description": "",
+    "body": [
+      "import sympy as sy",
+      ""
+    ]
+  },
+  "shape": {
+    "prefix": "shape",
+    "description": "",
+    "body": [
+      "from math import sqrt, floor, ceil",
+      "",
+      "",
+      "def subplot_shape(nums):",
+      "    base = sqrt(len(nums))",
+      "    return int(floor(base)), int(ceil(base))",
+      ""
+    ]
+  }
+}
