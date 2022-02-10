@@ -1,0 +1,1 @@
+python-graphviz lightgbm jupyterlab_code_formatter sympy jupyterlab-spellchecker mypy jupyter_contrib_nbextensions yapf jupytext openpyxl conda-tree seaborn imbalanced-learn

@@ -1,1 +1,0 @@
-python-graphviz pydot tikzplotlib torchvision torchinfo lux-api watermark lightgbm mypy sympy torchmetrics neovim pyarrow yapf lifelines jupytext openpyxl conda-tree pymc umap-learn seaborn imbalanced-learn mpltern
