@@ -1,0 +1,157 @@
+startup = [
+
+    # alias
+    #
+    # l=list, sc=search, cl=clean, ck=check, is=install, us=uninstall, ud=update, ug=upgrade, k=kill, cf=config, if=info, sv=serve
+    "alias zz   = \time zsh -i -c exit",
+    "alias c = clear",
+    "alias a = alias",
+    "alias ua = unalias",
+    "alias uf = unfunction",
+    "alias e = echo",
+    "alias x = exit",
+    "alias rr = rm -rf",
+    # alternatives
+    "alias ls = lsd",
+    "alias ll = ls -l",
+    "alias la = ls -a",
+    "alias lla = ls -la",
+    "alias lt = ls --tree",
+    "alias cat = bat",
+    "alias du = dust",
+    "alias vi = nvim",
+    # softwares
+    "alias nj = node",
+    "alias pd = pandoc",
+    "alias ar = aria2c --conf-path=$HOME/.aria2/aria2.conf",
+    "alias z. = z ..",
+    "alias z.. = z ../..",
+    "alias z... = z ../../..",
+    "alias hf = hyperfine",
+    "alias nv = navi",
+    "alias nvq = navi -q",
+    "alias nvr = navi repo",
+    "alias zj = zellij",
+    "alias zjl = zellij list-sessions",
+    "alias zat = zellij attach",
+    "alias zjc = zellij --config ~/.config/zellij/config.yml",
+    "alias an = annie",
+    "alias ani = annie -i",
+
+    # global
+    # w=wordcount
+    "alias gr = | rg",
+    # "alias w = | rg '\W\D0\.\d+'",
+    # "alias w = | rg '\[\[' -c",
+    "alias wl = | wc -l",
+    "alias ww = | wc -w",
+
+    # git
+    #
+    # g=git
+    # a=add, cm=commit, ps=push, pl=pull, in=init, df=diff, sh=show
+    "alias ga = git add",
+    "alias gai = git add -i",
+    "alias gaa = git add .",
+    "alias gcm = git commit -m",
+    "alias gcma = git add .; git commit -m",
+    "alias ggc = git gc --prune=now --aggressive",
+    "alias gin = git init",
+    "alias gpl = git pull",
+    "alias gps = git push",
+    "alias gpsm = git push -u origin master",
+    "alias gpb =  git push --set-upstream origin master",
+    "alias gstt = git status",
+    "alias gsts = git stash",
+    "alias gsh = git show",
+    "alias gdf = git diff",
+    "alias grss = git reset --soft HEAD^",
+    "alias gct = git rev-list --count HEAD",
+    "alias gui = gitui",
+
+    # julia
+    # j=julia
+    "alias j = julia",
+    "alias je = julia --eval",
+
+
+    # conda & mamba
+    # dp=depends, n=needs, t=tree, a=all
+    "alias r = radian",
+    "alias cda = conda deactivate; clear",
+    "alias ccr = conda create -n",
+    "alias ccl = conda clean --all",
+    "alias cif = conda info",
+    "alias csc = mamba search -q",
+    "alias cis = mamba install -q",
+    "alias cus = mamba uninstall -q",
+    "alias cud = mamba update --all -q",
+    "alias clv = conda-tree leaves",
+    "alias cwn = conda-tree whoneeds",
+    "alias cdp = conda-tree depends",
+    "alias cdpt = conda-tree depends -t --small",
+    "alias ccc = cd $APP/mambaforge/base/pkgs/cache/",
+
+    # pip
+    #
+    # p=pip3
+    "alias pis = pip3 install",
+    "alias pus = pip3 uninstall",
+    "alias pug = pip3 install --upgrade",
+
+    # jupyter
+    #
+    # j=jupyter
+    # k=kernelspec, b=book, build
+    "alias jn = jupyter notebook",
+    "alias jl = jupyter lab",
+    "alias jkl = jupyter kernelspec list",
+    "alias jkus = jupyter kernelspec remove",
+    "alias jbcr = jupyter-book create",
+    "alias jbcl = jupyter-book clean",
+    "alias jbb = jupyter-book build",
+    "alias ghp = ghp-import -n -p -f _build/html",
+
+    # latex
+    #
+    # lt=tlmgr
+    # s=self
+    "alias ltud = tlmgr update --all",
+    "alias ltuds = tlmgr update --self --all",
+    "alias ltck = tlmgr check",
+    "alias ltis = tlmgr install",
+    "alias ltus = tlmgr remove",
+    "alias ltris = tlmgr update --reinstall-forcibly-removed --all",
+    "alias ltiu = tlmgr init-usertree",
+    "alias ltl = tlmgr list --only-installed",
+    "alias ltlr = tlmgr repository list",
+    "alias ltlu = tlmgr --usermode list",
+    "alias ltown = sudo chown -R $(whoami) $texlive",
+
+    # rust
+    #
+    # cg=cargo, rs=rust
+    "alias cg = cargo",
+    "alias cgis = cargo install",
+    "alias cgus = cargo uninstall",
+    "alias cgug = cargo update",
+    "alias cgcl = cargo clean",
+    "alias cgsc = cargo search",
+    "alias cgb = cargo build",
+    "alias cgck = cargo check",
+    "alias cgn = cargo new",
+    "alias cgt = cargo test",
+    "alias cgr = cargo run",
+    "alias rsud = rustup update",
+
+    # ruby
+    #
+    # rb=gem
+    # s=system
+    "alias rbl = gem list",
+    "alias rbis = gem install",
+    "alias rbus = gem uninstall",
+    "alias rbcl = gem cleanup",
+    "alias rbd = gem dependency",
+    "alias rbuds = sudo gem update --system",
+]
