@@ -1,0 +1,49 @@
+---
+# Configuration for zellij.
+
+# In order to troubleshoot your configuration try using the following command:
+# `zellij setup --check`
+# It should show current config locations and features that are enabled.
+
+# Choose the path to the default shell that zellij will use for opening new panes
+# Default: $SHELL
+default_shell: zsh
+
+# Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
+# eg. when terminal window with an active zellij session is closed
+# Options:
+#   - detach (Default)
+#   - quit
+on_force_close: detach
+
+# Send a request for a simplified ui (without arrow fonts) to plugins
+# Options:
+#   - true
+#   - false (Default)
+simplified_ui: false
+
+# Toggle between having pane frames around the panes
+# Options:
+#   - true
+#   - false (default)
+pane_frames: false
+
+# Choose the theme that is specified in the themes section.
+# Default: default
+theme: default
+
+# Choose the mode that zellij uses when starting up.
+# Default: normal
+# locked
+default_mode: normal
+
+# Toggle enabling the mouse mode.
+# On certain configurations, or terminals this could
+# potentially interfere with copying text.
+# Options:
+#   - true
+#   - false (default)
+mouse_mode: true
+
+# The number of lines zellij stores for each pane in the scroll back buffer.
+scroll_buffer_size: 10000
