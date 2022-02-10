@@ -97,7 +97,7 @@ mas "MarginNote 3", id: 1423522373
 mas "Notability", id: 736189492
 mas "Numbers 表格", id: 409203825
 mas "Pages 文稿", id: 409201541
-mas "Purple Notebook", id: 1535269503
+# mas "Purple Notebook", id: 1535269503
 mas "Shapr3D", id: 1091675654
 mas "Speedtest", id: 1153157709
 mas "Twitter", id: 1482454543
