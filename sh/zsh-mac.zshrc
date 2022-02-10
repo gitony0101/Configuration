@@ -16,6 +16,7 @@ function clean {
     done
     mkdir -p $(brew --cache)/Cask
 }
+# alias clean="rm -rf ${HOME}/Library/Caches/* ; mkdir -p $(brew --cache)/Cask"
 
 # mas
 alias mis="mas install"
