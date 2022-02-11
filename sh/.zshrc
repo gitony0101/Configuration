@@ -110,8 +110,8 @@ unset __conda_setup
 declare -A Cenv
 
 Cenv[b]="base"
-Cenv[k]="kaggle"
-Cenv[c]="cling"
+# Cenv[k]="kaggle"
+# Cenv[c]="cling"
 
 source ${CONFIG}/sh/zsh-conda.zshrc
 
