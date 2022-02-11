@@ -17,7 +17,9 @@ function clean {
     mkdir -p $(brew --cache)/Cask
 }
 
+# old fashioned
 alias cln="rm -rf ${HOME}/Library/Caches/* ; mkdir -p $(brew --cache)/Cask"
+alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 
 # mas
 alias mis="mas install"
