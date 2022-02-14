@@ -38,5 +38,24 @@
       "    return int(floor(base)), int(ceil(base))",
       ""
     ]
+  },
+  "plotdist": {
+    "prefix": "plotdist",
+    "description": "",
+    "body": [
+      "def plot_dist(rvs):",
+      "    _, axes = plt.subplots(1,2,figsize=(12, 8))",
+      "",
+      "    axes[0].plot(np.arange(N), rvs, color='blue',alpha=0.3)",
+      "    ",
+      "    sns.distplot(rvs,",
+      "                 kde=False,",
+      "                 color=\"red\",",
+      "                 hist_kws={\"linewidth\": 15,'alpha':0.3}",
+      "                 ,ax=axes[1])",
+      "    # axes[1].set_xticks([])",
+      "    plt.show()",
+      ""
+    ]
   }
 }

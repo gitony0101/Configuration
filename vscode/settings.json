@@ -364,7 +364,8 @@
     "markdown": true,
     "latex": false,
     "sql": false,
-    "python": false
+    "python": true,
+    "code-runner-output": true
   },
   "shellformat.effectLanguages": [
     "dockerfile",
