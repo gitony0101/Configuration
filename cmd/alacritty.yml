@@ -18,10 +18,10 @@ shell:
   args:
     # login
     - -l
-    - -c
-    - 'zellij --layout v12'
+    # current
+    # - -c
     # - 'zellij --layout h12'
-    # - 'tmux attach || tmux'
+    # - 'zellij attach --index 0 --create'
 
 window:
   # Specified in number of columns/lines, not pixels. If both are zero this
@@ -44,7 +44,7 @@ window:
   #   - Windowed
   #   - Maximized
   #   - Fullscreen
-  startup_mode: Maximized
+  startup_mode: Windowed
 
   # Window decorations
   #

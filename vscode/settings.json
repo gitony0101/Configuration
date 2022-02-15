@@ -442,4 +442,5 @@
     "run"
   ],
   "git.autofetch": true,
+  "vsicons.dontShowNewVersionMessage": true,
 }
