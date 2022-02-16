@@ -101,7 +101,6 @@
   "window.restoreWindows": "all",
   "workbench.activityBar.iconClickBehavior": "toggle",
   "workbench.colorTheme": "Github Light Theme",
-  "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromCodeNavigation": true,
   "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.editor.pinnedTabSizing": "compact",
@@ -443,4 +442,5 @@
   ],
   "git.autofetch": true,
   "vsicons.dontShowNewVersionMessage": true,
+  "workbench.editor.enablePreview": false,
 }
