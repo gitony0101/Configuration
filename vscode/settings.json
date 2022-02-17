@@ -363,7 +363,7 @@
     "markdown": true,
     "latex": false,
     "sql": false,
-    "python": true,
+    "python": false,
     "code-runner-output": true
   },
   "shellformat.effectLanguages": [
