@@ -1,81 +1,81 @@
 # 用户指南
 
-## File Management
+## 文件管理
 
-> in `zsh-utils.sh`
+> 在 `zsh-utils.sh` 中：
 
 - `ff`
-  - refresh file by `source` (default: zsh)
+  - 通过 `source` 刷新 (默认: zsh)
 - `ef`
-  - file: edit by `$EDITOR` (default: VS Code)
-  - folder: open
+  - 通过 `$EDITOR` 编辑 (默认: VS Code)
+  - 文件夹：开放
 - `vf`
-  - file: edit by `nvim` (NeoVim)
-  - folder: open
+  - 通过 `nvim` 编辑(NeoVim)
+  - 文件夹：开放
 - `bf`
-  - file: browse by `bat`/`cat`
-  - folder: browse by `lsd`/`ls`
+  - 通过 `bat`/`cat` 浏览文件
+  - 文件夹：通过 `lsd`/`ls` 浏览
 - `ipf`
-  - file: overwrite configurations in `$Oxygen` to corresponding `$Sysfile` files
+  - 文件：在 `$Oxygen` 中覆盖对应的 `$Sysfile` 文件配置
 - `epf`
-  - file: overwrite `$Sysfile` configurations to `$Oxygen` folder and create hard links
+  - 文件：在 `$Sysfile` 中覆盖对应的 `$Oxygen` 文件配置并创建硬连接
 - `init_*`
-  - file: install by configuration files in `$Oxygen/install` folder
+  - 文件: 在 `$Oxygen/install` 安装配置文件
 - `update_*`
-  - file: update configurations in `$BACKUP` folder to system
+  - 文件: 在 `$BACKUP` 文件夹中更新系统配置文件
 - `backup_*`
-  - file: backup configurations to `$BACKUP` folder
+  - 文件: 在 `$BACKUP` 文件夹中备份文件
 
-## Conda Management
+## Conda 环境管理
 
-> in `zsh-python.sh`
+> 在 `zsh-python.sh` 中：
 
-### outside environment
+### 在环境外：
 
-- ca: activate `cenv`
-- cra: reactivate `cenv`
-- ccr: create `cenv`
-- cerm: remove `cenv`
-- cech: change conda-foreg subdir
-  - `i`: use `x86_64` (Rosetta on M1) environment
-  - not `i`: use `arm64` environment
-- ceep: export environment
-- cls: list packages
+- ca: 激活环境 `cenv`
+- cra: 重新激活环境 `cenv`
+- ccr: 创建环境 `cenv`
+- cerm: 删除环境 `cenv`
+- cech: 更改 conda-forge 子目录
+  - `i`: 使用 `x86_64` (M1 罗塞塔转译) 环境
+  - 非 `i`: 使用 `arm64` 环境
+- ceep: 释放环境
+- cls: 包列表
 
-### inside environment
+### 在环境内
 
-## Homebrew Management
+## Homebrew 管理
 
-> in `zsh-brew.sh`
+> 在 `zsh-brew.sh`中
 
-### install, uninstall, upgrade
+### 安装、删除、更新
 
-- bis: brew install
-- bris: brew reinstall
-- bus: brew uninstall
-- bup: brew upgrade
+- bis: brew install 安装
+- bris: brew reinstall 重装
+- bus: brew uninstall 删除
+- bup: brew upgrade 更新
 
 ```bash
 bis curl git gnupg
 ```
 
-suffix `c` is a flag to restrict brew commands only work on casks
+**前缀 `c` 是一个标志用来严格限制 brew 命令只针对的 casks 操作**
 
-- bisc: brew install --cask
-- brisc: brew reinstall --cask
-- bupc: brew upgrade --cask
+- bisc: brew install --cask cask 安装
+- brisc: brew reinstall --cask cask 重装
+- bupc: brew upgrade --cask cask 升级
 
-suffix `g` is a flag to force brew upgrade every cask including ones with `auto_update` flags
+前缀 `g` 是一个标志用来强制升级每个 cask（包括 `auto_update` 自动升级的 cask）
 
-- bupg: brew upgrade --greedy
+- bupg: brew upgrade --greedy 全局升级
 
-### download, replace, mirror
+### 下载、替换、镜像
 
-- bdlc: download brew cask by `aria2`
+- bdlc: 使用 `aria2` 下载 brew cask
   - `$1`: cask name
-- brp: replace brew cache file by predownloaded file
+- brp: 适用于下载文件替换缓存中的 brew cask
   - `$1`: cask name
-- bmr: using brew mirror
-- bmrrs: reset brew git source to official repositories
+- bmr: using brew mirror 使用 brew 镜像
+- bmrrs: reset brew git source to official repositories 重置 brew 到官方源
 
-### bundle, dump
+### 打包和输出安装脚本
