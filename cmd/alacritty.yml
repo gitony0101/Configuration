@@ -16,18 +16,16 @@ render_timer: false
 shell:
   program: /bin/zsh
   args:
-    # login
-    - -l
-    # current
+    - --login
+    # execute
     # - -c
-    # - 'zellij --layout h12'
-    # - 'zellij attach --index 0 --create'
+    # - 'zellij attach --index 0 || zellij --layout h12'
 
 window:
   # Specified in number of columns/lines, not pixels. If both are zero this
   dimensions:
-    columns: 120
-    lines: 60
+    columns: 150
+    lines: 47
 
   # Blank space added around the window in pixels. This padding is not scaled by
   # DPI and the specified value is always added at both opposing sides.
@@ -146,25 +144,31 @@ key_bindings:
   - { key: N, mods: Command, action: SpawnNewInstance }
   - { key: W, mods: Command, action: Quit }
 
-  # shortcuts for tmux. the leader key is control-b
-  - { key: LBracket, mods: Command, chars: "\x02-" } # split pane horizontally
-  - { key: RBracket, mods: Command, chars: "\x02\\" } # split pane verically
-  - { key: LBracket, mods: Command|Alt, chars: "\x02\\" }
-  - { key: LBracket, mods: Command|Alt, chars: "\x02-" }
-  - { key: RBracket, mods: Command|Alt, chars: "\x02\\" }
-  - { key: RBracket, mods: Command|Alt, chars: "\x02-" }
-    # move the cursor
-  - { key: Left, mods: Command, chars: "\x02\x68" }
-  - { key: Down, mods: Command, chars: "\x02\x6a" }
-  - { key: Up, mods: Command, chars: "\x02\x6b" }
-  - { key: Right, mods: Command, chars: "\x02\x6c" }
-    # move the pane border
-  - { key: Left, mods: Command|Alt, chars: "\x02\x48" }
-  - { key: Down, mods: Command|Alt, chars: "\x02\x4a" }
-  - { key: Up, mods: Command|Alt, chars: "\x02\x4b" }
-  - { key: Right, mods: Command|Alt, chars: "\x02\x4c" }
+  # shortcuts for zellij, the leader key is control (\x) or alt (\x1b)
+  # ^a~h: \x01~\x08
+  # ^n~o: \x0e~\x0f
+  # ^p~v: \x10~\x16
 
-    # custom actions of files
+  # split pane horizontally
+  - { key: RBracket, mods: Command, chars: "\x10d" }
+  # split pane verically
+  - { key: LBracket, mods: Command, chars: "\x10r" }
+  # increase / decrease pane size
+  - { key: Equals, mods: Command, chars: "\x1b=" }
+  - { key: Minus, mods: Command, chars: "\x1b-" }
+  # new tab
+  - { key: T, mods: Command, chars: "\x14n" }
+  # move the cursor
+  - { key: Left, mods: Command, chars: "\x1bh" }
+  - { key: Down, mods: Command, chars: "\x1bj" }
+  - { key: Up, mods: Command, chars: "\x1bk" }
+  - { key: Right, mods: Command, chars: "\x1bl" }
+  # move the pane border
+  - { key: Left, mods: Command|Alt, chars: "\x0eh\x0a" }
+  - { key: Down, mods: Command|Alt, chars: "\x0ej\x0e" }
+  - { key: Up, mods: Command|Alt, chars: "\x0ek\x0e" }
+  - { key: Right, mods: Command|Alt, chars: "\x0el\x0e" }
+  # custom actions of files
   - {
       key: Comma,
       mods: Command,
@@ -207,3 +211,24 @@ cursor:
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: true
+
+debug:
+  # Display the time it takes to redraw each frame.
+  render_timer: false
+
+  # Keep the log file after quitting Alacritty.
+  persistent_logging: false
+
+  # Log level
+  #
+  # Values for `log_level`:
+  #   - Off
+  #   - Error
+  #   - Warn
+  #   - Info
+  #   - Debug
+  #   - Trace
+  log_level: Warn
+
+  # Print all received window events.
+  print_events: false

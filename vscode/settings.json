@@ -363,7 +363,7 @@
     "markdown": true,
     "latex": false,
     "sql": false,
-    "python": false,
+    "python": true,
     "code-runner-output": true
   },
   "shellformat.effectLanguages": [
@@ -443,4 +443,8 @@
   "git.autofetch": true,
   "vsicons.dontShowNewVersionMessage": true,
   "workbench.editor.enablePreview": false,
+  "jupyter.widgetScriptSources": [
+    "jsdelivr.com",
+    "unpkg.com"
+  ],
 }
