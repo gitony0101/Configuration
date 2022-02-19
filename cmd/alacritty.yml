@@ -17,7 +17,7 @@ shell:
   program: /bin/zsh
   args:
     - --login
-    # execute
+    # # execute
     # - -c
     # - 'zellij attach --index 0 || zellij --layout h12'
 

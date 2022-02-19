@@ -203,6 +203,18 @@
   "jupyter.jupyterServerType": "local",
   "jupyter.magicCommandsAsComments": true,
   "jupyter.sendSelectionToInteractiveWindow": true,
+  "jupyter.variableQueries": [
+    {
+      "language": "python",
+      "query": "_rwho_ls = %who_ls/nprint(_rwho_ls)",
+      "parseExpr": "'(/w+)'"
+    },
+    {
+      "language": "julia",
+      "query": "whos",
+      "parseExpr": "'(/w+)'"
+    }
+  ],
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
@@ -390,7 +402,6 @@
   "julia.editor": "code",
   "julia.enableCrashReporter": false,
   "julia.enableTelemetry": false,
-  "julia.executablePath": "/opt/homebrew/bin/julia",
   "julia.execution.codeInREPL": true,
   "julia.execution.resultType": "both",
   "julia.focusPlotNavigator": true,
@@ -433,7 +444,6 @@
   "conventionalCommits.lineBreak": "\\n",
   "extension.bracket_char": true,
   "extension.comma_location": true,
-  "python.defaultInterpreterPath": "/Users/sagawithme/miniconda3/envs/p39/bin/python",
   "python.pythonPath": "/opt/homebrew/Caskroom/miniconda/base/envs/p39/bin/python",
   "tabnine.experimentalAutoImports": true,
   "markdown-code-runner.editor.shortcuts": [
@@ -443,8 +453,4 @@
   "git.autofetch": true,
   "vsicons.dontShowNewVersionMessage": true,
   "workbench.editor.enablePreview": false,
-  "jupyter.widgetScriptSources": [
-    "jsdelivr.com",
-    "unpkg.com"
-  ],
 }
