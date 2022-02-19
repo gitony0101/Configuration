@@ -1,6 +1,6 @@
 # Oxidizer.sh
 
-使用 Rust Toolchains 的简约和可扩展的 Dotfile 解决方案
+针对 Rust Toolchains 的简约和可扩展的 Dotfile 解决方案
 
 让我们来催化您的开发环境。
 
@@ -188,7 +188,7 @@ cd oxidizer && oxup
 
 ### Git
 
-**- [x] find fat blob files？？？？**
+- [x] 查找 git 自动产生的打包文件
 
 - [ ] 集成 `git filter-repo` 命令
 
