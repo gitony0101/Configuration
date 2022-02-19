@@ -118,6 +118,12 @@ oxup
 - [x] delta
 - [x] hyperfine
 - [x] kondo
+- [ ] helix-editor
+- [ ] nushell
+
+## 主要文件
+
+- `oxin`:初始化默认设置
 
 ## Shell
 
@@ -145,59 +151,18 @@ oxup
 - [ ] 集成 Conda
 - [ ] 集成 Alacritty
 
-## Multiplexer
-
-### Zellij
-
-- [x] 预定义的界面
-- [x] 集成 Alacritty
-  - [x] 光标快捷键
-  - [x] 窗口快捷键
-  - [x] 分屏快捷键
-
-### TMux
-
-- [x] 关连剪贴板
-- [x] 自动回复上次内容
-- [x] 集成 Alacritty
-  - [x] 光标快捷键
-  - [x] 窗口快捷键
-  - [x] 分屏快捷键
-
-## Editor
-
-### NeoVim
-
-对 NeoVim，推荐使用 NvChad 用来搭建一个纯净的 Lua 设置.
-
 ### Helix
 
 - [ ] 取代 NeoVim
 - [ ] 集成进 Alacritty
 
-## System
+## 系统
 
 ### macOS
 
 - [x] 更新系统
 - [x] 清除缓存垃圾
-  - [ ]
 - [x] 文件签名
-
-## Tools
-
-### Git
-
-- [x] 查找 git 产生的大体积文件
-- [ ] 集成 `git filter-repo` 命令
-
-### Pandoc
-
-- [x] 转换 markdown 到 pdf (使用 cjk unicode)
-
-## Widgets
-
-- [x] 天气插件 (使用 `wttr/in`)
 
 ## 文件管理
 
@@ -225,27 +190,15 @@ oxup
 - `backup_*`
   - 文件: 在 `$BACKUP` 文件夹中备份文件
 
-## Conda 环境管理
-
-> 在 `zsh-python.sh` 中：
-
-### 在环境外：
-
-- ca: 激活环境 `cenv`
-- cra: 重新激活环境 `cenv`
-- ccr: 创建环境 `cenv`
-- cerm: 删除环境 `cenv`
-- cech: 更改 conda-forge 子目录
-  - `i`: 使用 `x86_64` (M1 罗塞塔转译) 环境
-  - 非 `i`: 使用 `arm64` 环境
-- ceep: 释放环境
-- cls: 包列表
-
-### 在环境内
-
 ## Homebrew 管理
 
 > 在 `zsh-brew.sh`中
+
+- [x] Integrated Aria2 to download Homebrew Casks
+- [x] Enable Homebrew installation by using pre-download installers
+
+- [x] 使用 `aria2` 下载 brew cask
+- [x] 使用预下载器安装 Homebrew Casks
 
 ### 安装、删除、更新
 
@@ -278,6 +231,62 @@ bis curl git gnupg
 - bmrrs: reset brew git source to official repositories 重置 brew 到官方源
 
 ### 打包和输出安装脚本
+
+## Conda 环境管理
+
+> 在 `zsh-python.sh` 中：
+
+### 在环境外：
+
+- ca: 激活环境 `cenv`
+- cra: 重新激活环境 `cenv`
+- ccr: 创建环境 `cenv`
+- cerm: 删除环境 `cenv`
+- cech: 更改 conda-forge 子目录
+  - `i`: 使用 `x86_64` (M1 罗塞塔转译) 环境
+  - 非 `i`: 使用 `arm64` 环境
+- ceep: 释放环境
+- cls: 包列表
+
+### Git 管理
+
+- [x] 查找 git 产生的大体积文件
+- [ ] 集成 `git filter-repo` 命令
+
+### VS Code
+
+### NeoVim
+
+对 NeoVim，推荐使用 NvChad 用来搭建一个纯净的 Lua 设置.
+
+## Multiplexer
+
+### Zellij
+
+- [x] 预定义的界面
+- [x] 集成 Alacritty
+  - [x] 光标快捷键
+  - [x] 窗口快捷键
+  - [x] 分屏快捷键
+
+### TMux
+
+- [x] 关连剪贴板
+- [x] 自动回复上次内容
+- [x] 集成 Alacritty
+  - [x] 光标快捷键
+  - [x] 窗口快捷键
+  - [x] 分屏快捷键
+
+## 其他工具
+
+### Pandoc
+
+- [x] 转换 markdown 到 pdf (使用 cjk unicode)
+
+## Widgets
+
+- [x] 天气插件 (使用 `wttr/in`)
 
 ## 插件总结
 
