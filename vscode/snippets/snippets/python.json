@@ -1,0 +1,91 @@
+{
+  "npms": {
+    "prefix": "npms",
+    "description": "",
+    "body": [
+      "import numpy as np",
+      "import pandas as pd",
+      "import scipy.stats as stats",
+      "",
+      "import matplotlib.pyplot as plt",
+      "import seaborn as sns",
+      "",
+      "np.random.seed(42)",
+      ""
+    ]
+  },
+  "stats": {
+    "prefix": "stats",
+    "description": "",
+    "body": [
+      "from scipy.stats import stats",
+      ""
+    ]
+  },
+  "sy": {
+    "prefix": "sy",
+    "description": "",
+    "body": [
+      "import sympy as sy",
+      ""
+    ]
+  },
+  "shape": {
+    "prefix": "shape",
+    "description": "",
+    "body": [
+      "from math import sqrt, floor, ceil",
+      "",
+      "",
+      "def subplot_shape(nums):",
+      "    base = sqrt(len(nums))",
+      "    return int(floor(base)), int(ceil(base))",
+      ""
+    ]
+  },
+  "plotdist": {
+    "prefix": "plotdist",
+    "description": "",
+    "body": [
+      "def plot_dist(rvs):",
+      "    _, axes = plt.subplots(1,2,figsize=(12, 8))",
+      "",
+      "    axes[0].plot(np.arange(len(rvs)), rvs, color='blue',alpha=0.3)",
+      "    ",
+      "    axes[1].hist(rvs, bins=100, density=True, color='red',alpha=0.3)",
+      "",
+      "    plt.show()",
+      ""
+    ]
+  },
+  "plot compare": {
+    "prefix": "plot compare",
+    "description": "",
+    "body": [
+      "def plot_dist_compare(rvs_scratch, rvs_builtin):",
+      "    \"\"\"",
+      "    set the random variables plots generate by different methods below, and compare them with the built-in functions",
+      "    \"\"\"",
+      "    plt.rcParams.update({",
+      "          'axes.titlesize': 20})",
+      "",
+      "    _, axes = plt.subplots(2,2,figsize=(24, 16))",
+      "    ",
+      "    axes[0,0].plot(np.arange(N), rvs_scratch, color='blue',alpha=0.3)",
+      "    axes[0,0].set(title=\"Plot of Random Variables Generated WITHOUT Built-in functions\")",
+      "",
+      "    axes[0,1].hist(rvs_scratch, bins=100, density=True, color='red',alpha=0.3)",
+      "    axes[0,1].set(title=\"Histogram of Random Variables Generated WITHOUT built-in functions\")",
+      "",
+      "",
+      "    axes[1,0].plot(np.arange(N), rvs_builtin, color='blue',alpha=0.3)",
+      "    axes[1,0].set(title=\"Plot of Random Variables Generated WITH built-in functions\")",
+      "",
+      "    axes[1,1].hist(rvs_builtin, bins=100, density=True, color='red',alpha=0.3)",
+      "    axes[1,1].set(title=\"Histogram of Random Variables Generated WITH built-in functions\")",
+      "",
+      "    plt.show()",
+      ""
+    ]
+  }
+}

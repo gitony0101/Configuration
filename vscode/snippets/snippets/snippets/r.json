@@ -1,0 +1,37 @@
+{
+  "rr": {
+    "prefix": "rr",
+    "description": "",
+    "body": [
+      "library(readr)",
+      ""
+    ]
+  },
+  "gg": {
+    "prefix": "gg",
+    "description": "",
+    "body": [
+      "library(ggplot2)",
+      "library(dplyr)",
+      "library(tibble)",
+      "library(repr)",
+      ""
+    ]
+  },
+  "bw": {
+    "prefix": "bw",
+    "description": "",
+    "body": [
+      "theme_set(theme_bw())",
+      ""
+    ]
+  },
+  "size": {
+    "prefix": "size",
+    "description": "",
+    "body": [
+      "options(repr.plot.width = 8, repr.plot.height = 4)",
+      ""
+    ]
+  }
+}
