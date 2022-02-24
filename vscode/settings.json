@@ -3,7 +3,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.fontLigatures": true,
-  "editor.fontSize": 16,
+  "editor.fontSize": 18,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
@@ -153,7 +153,7 @@
   "markdown.extension.toc.plaintext": true,
   "markdown.preview.breaks": true,
   "markdown.preview.fontFamily": "consolas",
-  "markdown.preview.fontSize": 16,
+  "markdown.preview.fontSize": 18,
   "markdown.preview.linkify": true,
   "markdown.preview.markEditorSelection": true,
   "markdown.preview.openMarkdownLinks": "inEditor",
@@ -453,4 +453,5 @@
   "git.autofetch": true,
   "vsicons.dontShowNewVersionMessage": true,
   "workbench.editor.enablePreview": false,
+  "window.zoomLevel": -1,
 }
