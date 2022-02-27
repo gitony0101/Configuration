@@ -452,5 +452,5 @@
   "git.autofetch": true,
   "vsicons.dontShowNewVersionMessage": true,
   "workbench.editor.enablePreview": false,
-  "workbench.colorTheme": "Firefox Dark",
+  "workbench.colorTheme": "Github Light Theme",
 }
