@@ -131,7 +131,7 @@
     "javascript": "node",
     "julia": "julia",
     "lua": "lua",
-    "python": "$pythonPath -u $fullFileName",
+    "python": "python3",
     "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt"
   },
   "code-runner.executorMapByGlob": {
