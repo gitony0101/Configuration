@@ -17,9 +17,9 @@ shell:
   program: /bin/zsh
   args:
     - --login
-    # # execute
+    # execute
     # - -c
-    # - 'zellij attach --index 0 || zellij --layout h12'
+    # - 'zellij attach --index 0 --create'
 
 window:
   # Specified in number of columns/lines, not pixels. If both are zero this
@@ -150,32 +150,49 @@ key_bindings:
   # ^p~v: \x10~\x16
 
   # split pane horizontally
-  - { key: RBracket, mods: Command, chars: "\x10d" }
+  - { key: Minus, mods: Command, chars: "\x02\"" }
   # split pane verically
-  - { key: LBracket, mods: Command, chars: "\x10r" }
+  - { key: Backslash, mods: Command, chars: "\x02%" }
+  # split pane in h12
+  - { key: LBracket, mods: Command|Alt, chars: "\x02\"" }
+  - { key: LBracket, mods: Command|Alt, chars: "\x02%" }
+  - { key: LBracket, mods: Command|Alt, chars: "\x0ej\x0e" }
+  - { key: LBracket, mods: Command|Alt, chars: "\x0ej\x0e" }
+  # split pane in v12
+  - { key: RBracket, mods: Command|Alt, chars: "\x02%" }
+  - { key: RBracket, mods: Command|Alt, chars: "\x02\"" }
+  - { key: RBracket, mods: Command|Alt, chars: "\x0el\x0e" }
   # increase / decrease pane size
-  - { key: Equals, mods: Command, chars: "\x1b=" }
-  - { key: Minus, mods: Command, chars: "\x1b-" }
+  - { key: Minus, mods: Command|Alt, chars: "\x1b-" }
+  - { key: Equals, mods: Command|Alt, chars: "\x1b=" }
+
   # new tab
-  - { key: T, mods: Command, chars: "\x14n" }
+  - { key: T, mods: Command, chars: "\x02bc" }
+  # move to previous tab
+  - { key: P, mods: Command, chars: "\x02bp" }
+  # move to next tab
+  - { key: N, mods: Command, chars: "\x02bn" }
+  # rename tab
+  - { key: M, mods: Command, chars: "\x02bn" }
+
   # move the cursor
   - { key: Left, mods: Command, chars: "\x1bh" }
   - { key: Down, mods: Command, chars: "\x1bj" }
   - { key: Up, mods: Command, chars: "\x1bk" }
   - { key: Right, mods: Command, chars: "\x1bl" }
+
   # move the pane border
   - { key: Left, mods: Command|Alt, chars: "\x0eh\x0a" }
   - { key: Down, mods: Command|Alt, chars: "\x0ej\x0e" }
   - { key: Up, mods: Command|Alt, chars: "\x0ek\x0e" }
   - { key: Right, mods: Command|Alt, chars: "\x0el\x0e" }
+
   # custom actions of files
   - {
       key: Comma,
       mods: Command,
       chars: 'code $HOME/.config/alacritty/alacritty.yml',
     }
-  - { key: Slash, mods: Command, chars: 'code $HOME/.zshrc' }
-  - { key: Backslash, mods: Command, chars: 'source $HOME/.zshrc; clear' }
 
 mouse:
   # Click settings

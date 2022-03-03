@@ -188,6 +188,8 @@
   "notebook.diff.enablePreview": false,
   "notebook.lineNumbers": "on",
   "python.formatting.provider": "yapf",
+  //"python.formatting.yapfPath": "/usr/local/bin/yapf",
+  "python.formatting.yapfPath": "/opt/homebrew/bin/yapf",
   "python.languageServer": "Jedi",
   "python.linting.enabled": true,
   "python.linting.mypyEnabled": true,
@@ -369,7 +371,7 @@
   },
   "github.copilot.enable": {
     "*": true,
-    "yaml": false,
+    "yaml": true,
     "plaintext": true,
     "markdown": true,
     "latex": false,
