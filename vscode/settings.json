@@ -455,4 +455,5 @@
   "vsicons.dontShowNewVersionMessage": true,
   "workbench.editor.enablePreview": false,
   "workbench.colorTheme": "Github Light Theme",
+  "python.defaultInterpreterPath": "/opt/homebrew/Caskroom/miniconda/base/envs/p39/bin/python",
 }
