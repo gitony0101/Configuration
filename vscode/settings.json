@@ -377,7 +377,8 @@
     "latex": false,
     "sql": false,
     "python": true,
-    "code-runner-output": true
+    "code-runner-output": true,
+    "java": false
   },
   "shellformat.effectLanguages": [
     "dockerfile",
@@ -456,4 +457,5 @@
   "workbench.editor.enablePreview": false,
   "workbench.colorTheme": "Github Light Theme",
   "python.defaultInterpreterPath": "/opt/homebrew/Caskroom/miniconda/base/envs/p39/bin/python",
+  "java.jdt.ls.java.home": "/opt/homebrew/Cellar/openjdk/17.0.2/libexec/openjdk.jdk/Contents/Home",
 }
