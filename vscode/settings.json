@@ -9,7 +9,6 @@
   "editor.inlineSuggest.enabled": true,
   "editor.largeFileOptimizations": false,
   "editor.linkedEditing": true,
-  "editor.minimap.enabled": false,
   "editor.renderControlCharacters": true,
   "editor.suggestSelection": "first",
   "editor.wordWrap": "bounded",
@@ -458,4 +457,5 @@
   "python.defaultInterpreterPath": "/opt/homebrew/Caskroom/miniconda/base/envs/p39/bin/python",
   "java.jdt.ls.java.home": "/opt/homebrew/Cellar/openjdk/17.0.2/libexec/openjdk.jdk/Contents/Home",
   "C_Cpp.intelliSenseEngine": "Disabled",
+  "editor.minimap.enabled": false,
 }
