@@ -1,3 +1,4 @@
+mamba
 ghp-import
 jupyter
 mypy
@@ -5,6 +6,5 @@ jupyter_contrib_nbextensions
 olefile
 neovim
 yapf
-mamba
-pip
 conda-tree
+pip

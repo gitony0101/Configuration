@@ -215,7 +215,7 @@
     }
   ],
   "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
   "[html][css][javascript][javascriptreact][typescript][markdown][yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
