@@ -457,6 +457,6 @@
   "python.defaultInterpreterPath": "/opt/homebrew/Caskroom/miniconda/base/envs/p39/bin/python",
   "java.jdt.ls.java.home": "/opt/homebrew/Cellar/openjdk/17.0.2/libexec/openjdk.jdk/Contents/Home",
   "C_Cpp.intelliSenseEngine": "Disabled",
-  "editor.minimap.enabled": false,
   "workbench.sideBar.location": "right",
+  "editor.minimap.enabled": false,
 }
