@@ -376,7 +376,8 @@
     "sql": false,
     "python": true,
     "code-runner-output": true,
-    "java": false
+    "java": false,
+    "cpp": false
   },
   "shellformat.effectLanguages": [
     "dockerfile",
