@@ -169,7 +169,7 @@
   },
   "shortcuts" : {
     "bottomHalf" : {
-      "keyCode" : 121,
+      "keyCode" : 44,
       "modifierFlags" : 1572864
     },
     "bottomLeft" : {
@@ -178,6 +178,10 @@
     },
     "bottomRight" : {
       "keyCode" : 40,
+      "modifierFlags" : 1572864
+    },
+    "bottomRightSixth" : {
+      "keyCode" : 47,
       "modifierFlags" : 1572864
     },
     "center" : {
@@ -273,7 +277,7 @@
       "modifierFlags" : 1572864
     },
     "topHalf" : {
-      "keyCode" : 116,
+      "keyCode" : 39,
       "modifierFlags" : 1572864
     },
     "topLeft" : {
@@ -282,6 +286,10 @@
     },
     "topRight" : {
       "keyCode" : 34,
+      "modifierFlags" : 1572864
+    },
+    "topRightSixth" : {
+      "keyCode" : 41,
       "modifierFlags" : 1572864
     }
   },
