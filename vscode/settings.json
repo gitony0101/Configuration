@@ -124,7 +124,7 @@
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
     "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "cpp": "cd $dir && g++ -std=c++20 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "clang++ -std=c++20 $dir$fileName -o $dir$fileNameWithoutExt && $dir$fileNameWithoutExt",
     "golang": "go run",
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
     "javascript": "node",
@@ -377,7 +377,7 @@
     "python": true,
     "code-runner-output": true,
     "java": false,
-    "cpp": false
+    "cpp": true
   },
   "shellformat.effectLanguages": [
     "dockerfile",
@@ -446,7 +446,6 @@
   "extension.bracket_char": true,
   "extension.comma_location": true,
   "python.pythonPath": "/opt/homebrew/Caskroom/miniconda/base/envs/p39/bin/python",
-  "tabnine.experimentalAutoImports": true,
   "markdown-code-runner.editor.shortcuts": [
     "run",
     "run"
