@@ -106,7 +106,7 @@
   "workbench.iconTheme": "vscode-icons",
   "workbench.list.smoothScrolling": true,
   "workbench.editorAssociations": {
-    "*.md": "default",
+    "*.md": "markdown-notebook",
     "*.ipynb": "jupyter-notebook",
     "*.jpg": "imagePreview.previewEditor",
     "*.png": "imagePreview.previewEditor",
@@ -377,7 +377,7 @@
     "python": true,
     "code-runner-output": true,
     "java": false,
-    "cpp": true
+    "cpp": false
   },
   "shellformat.effectLanguages": [
     "dockerfile",
