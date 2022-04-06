@@ -1,5 +1,6 @@
 scikit-learn
-jupyterlab-lsp
 python-lsp-server
+jupyterlab-lsp
+multiprocess
 matplotlib
 seaborn

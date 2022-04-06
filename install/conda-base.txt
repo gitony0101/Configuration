@@ -3,7 +3,7 @@ jupyter
 olefile
 mamba
 jupyter_contrib_nbextensions
+pynvim
 yapf
 mypy
-neovim
 conda-tree
