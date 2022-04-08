@@ -1,1 +1,9 @@
-ghp-import jupyter-book jupyter_contrib_nbextensions mypy yapf conda-tree
+ghp-import
+jupyter
+olefile
+mamba
+jupyter_contrib_nbextensions
+pynvim
+yapf
+mypy
+conda-tree
