@@ -1,5 +1,1 @@
-scikit-learn
-jupyterlab-lsp
-python-lsp-server
-matplotlib
-seaborn
+jupyterlab_code_formatter  jupyterlab-spellchecker  jupyter_contrib_nbextensions  jupyterlab-lsp python-lsp-server jupyter jupyterlab_latex scikit-learn matplotlib seaborn

@@ -1,9 +1,1 @@
-ghp-import
-jupyter
-olefile
-mamba
-jupyter_contrib_nbextensions
-yapf
-mypy
-neovim
-conda-tree
+ghp-import jupyter-book jupyter_contrib_nbextensions mypy yapf conda-tree
