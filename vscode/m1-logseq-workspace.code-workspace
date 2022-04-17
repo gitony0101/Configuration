@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "../../../../Library/Mobile Documents/iCloud~com~logseq~logseq/Documents"
+		},
+		{
+			"path": "../../lsq-notes"
 		}
 	],
 	"settings": {}
