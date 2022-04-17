@@ -1,10 +1,12 @@
 jupyterlab_code_formatter
-python-lsp-server
 jupyterlab-spellchecker
-jupyterlab-lsp
 jupyter_contrib_nbextensions
+python-lsp-server
+jupyterlab-lsp
+typing-extensions
 jupyter
 jupyterlab_latex
 scikit-learn
 matplotlib
+conda-tree
 seaborn
