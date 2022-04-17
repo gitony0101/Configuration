@@ -162,18 +162,23 @@ key_bindings:
   - { key: RBracket, mods: Command|Alt, chars: "\x02%" }
   - { key: RBracket, mods: Command|Alt, chars: "\x02\"" }
   - { key: RBracket, mods: Command|Alt, chars: "\x0el\x0e" }
+  # split pane in 22
+  - { key: Backslash, mods: Command|Alt, chars: "\x02%" }
+  - { key: Backslash, mods: Command|Alt, chars: "\x02\"" }
+  - { key: Backslash, mods: Command|Alt, chars: "\x1bh" }
+  - { key: Backslash, mods: Command|Alt, chars: "\x02\"" }
   # increase / decrease pane size
   - { key: Minus, mods: Command|Alt, chars: "\x1b-" }
   - { key: Equals, mods: Command|Alt, chars: "\x1b=" }
 
   # new tab
-  - { key: T, mods: Command, chars: "\x02bc" }
-  # move to previous tab
-  - { key: P, mods: Command, chars: "\x02bp" }
-  # move to next tab
-  - { key: N, mods: Command, chars: "\x02bn" }
+  - { key: T, mods: Command, chars: "\x02c" }
   # rename tab
-  - { key: M, mods: Command, chars: "\x02bn" }
+  - { key: M, mods: Command, chars: "\x02," }
+  # move to previous tab
+  - { key: LBracket, mods: Command, chars: "\x02p" }
+  # move to next tab
+  - { key: RBracket, mods: Command, chars: "\x02n" }
 
   # move the cursor
   - { key: Left, mods: Command, chars: "\x1bh" }

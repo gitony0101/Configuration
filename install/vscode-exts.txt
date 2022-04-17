@@ -26,7 +26,6 @@ GitHub.copilot
 GitHub.remotehub
 GrapeCity.gc-excelviewer
 hediet.vscode-drawio
-hellorusk.markdown-table-maker
 Heron.firefox-devtools-theme
 Hyzeta.vscode-theme-github-light
 inu1255.easy-snippet
@@ -46,7 +45,6 @@ ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
 ms-vscode.cpptools
 ms-vscode.live-server
-ms-vscode.vscode-markdown-notebook
 naturaltheme.natural-theme
 oijaz.unicode-latex
 piotrpalarz.vscode-gitignore-generator

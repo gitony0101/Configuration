@@ -1,9 +1,10 @@
+mamba
 ghp-import
 jupyter
-olefile
-mamba
-jupyter_contrib_nbextensions
-pynvim
-yapf
 mypy
+jupyter_contrib_nbextensions
+olefile
+neovim
+yapf
 conda-tree
+pip

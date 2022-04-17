@@ -1,6 +1,10 @@
-scikit-learn
+jupyterlab_code_formatter
 python-lsp-server
+jupyterlab-spellchecker
 jupyterlab-lsp
-multiprocess
+jupyter_contrib_nbextensions
+jupyter
+jupyterlab_latex
+scikit-learn
 matplotlib
 seaborn
