@@ -177,8 +177,8 @@
   "mdtableeditor.isIconMenuEnabled": true,
   "mdtableeditor.isTreeViewEnabled": true,
   "pandoc.docxOptString": "",
-  "pandoc.htmlOptString": "--standalone --katex --shift-heading-level-by=-1",
-  "pandoc.pdfOptString": "--pdf-engine=xelatex -V mainfont='STSong'",
+  "pandoc.htmlOptString": "--standalone --mathjax --shift-heading-level-by=-1",
+  "pandoc.pdfOptString": "---pdf-engine=xelatex -V CJKmainfont=\"Arial Unicode MS\"",
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
