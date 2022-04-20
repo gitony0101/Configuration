@@ -377,7 +377,7 @@
     "python": true,
     "code-runner-output": true,
     "java": false,
-    "cpp": false
+    "cpp": true
   },
   "shellformat.effectLanguages": [
     "dockerfile",
@@ -428,7 +428,7 @@
   "database-client.showQuery": true,
   "database-client.showTrigger": true,
   "database-client.showUser": true,
-  "leetcode.defaultLanguage": "python3",
+  "leetcode.defaultLanguage": "cpp",
   "leetcode.hint.commandShortcut": false,
   "leetcode.hint.commentDescription": false,
   "leetcode.hint.configWebviewMarkdown": false,
@@ -459,4 +459,5 @@
   "C_Cpp.intelliSenseEngine": "Disabled",
   "workbench.sideBar.location": "right",
   "editor.minimap.enabled": false,
+  "leetcode.endpoint": "leetcode",
 }
