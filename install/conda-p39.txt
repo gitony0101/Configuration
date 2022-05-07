@@ -8,5 +8,5 @@ jupyter
 jupyterlab_latex
 scikit-learn
 matplotlib
-conda-tree
+conga-tree
 seaborn
