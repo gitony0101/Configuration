@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../../leetcodeXB"
+		},
+		{
+			"path": "../../cs225-review"
 		}
 	],
 	"settings": {}
