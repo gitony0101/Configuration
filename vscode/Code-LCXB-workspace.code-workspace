@@ -11,7 +11,12 @@
 		},
 		{
 			"path": "../../黑马Cpp"
+		},
+		{
+			"path": "../../modern-cpp 原子之音"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"makefile.extensionOutputFolder": "./.vscode"
+	}
 }
