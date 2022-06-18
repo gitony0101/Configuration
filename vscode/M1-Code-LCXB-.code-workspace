@@ -1,16 +1,24 @@
 {
 	"folders": [
 		{
+			"name": "Coding-crash",
 			"path": "../../Coding-crash"
 		},
 		{
+			"name": "leetcodeXB",
 			"path": "../../leetcodeXB"
 		},
 		{
+			"name": "cs225-review",
 			"path": "../../cs225-review"
 		},
 		{
+			"name": "黑马Cpp",
 			"path": "../../../../../../Volumes/data 1/repo/黑马Cpp"
+		},
+		{
+			"name": "Cpp黑马135",
+			"path": "../../Cpp黑马135"
 		}
 	],
 	"settings": {}
