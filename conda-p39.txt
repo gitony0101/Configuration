@@ -1,0 +1,14 @@
+jupyterlab_code_formatter
+lightgbm
+pydot
+jupyterlab-spellchecker
+jupyter_contrib_nbextensions
+jupytext
+multiprocess
+tabulate
+umap-learn
+yapf
+openpyxl
+conda-tree
+imbalanced-learn
+seaborn
