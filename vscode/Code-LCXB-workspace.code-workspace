@@ -14,6 +14,10 @@
 		},
 		{
 			"path": "../../modern-cpp 原子之音"
+		},
+		{
+			"name": "LeetCode",
+			"path": "../../LeetCode"
 		}
 	],
 	"settings": {
