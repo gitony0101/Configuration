@@ -219,3 +219,4 @@ test/
 ### Vuejs ###
 # Recommended template: Node.gitignore
 vscode/Code-LCXB-workspace.code-workspace
+vscode/all-in-M1.code-workspace
