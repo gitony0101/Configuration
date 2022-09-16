@@ -12,5 +12,26 @@
       "</div>",
       ""
     ]
+  },
+  "tb": {
+    "prefix": "tb",
+    "description": "",
+    "body": [
+      "<style>",
+      ".center ",
+      "{",
+      "  width: auto;",
+      "  display: table;",
+      "  margin: auto;",
+      "}",
+      "</style>",
+      "",
+      "<div class=\"center\">",
+      "",
+      "<!-- table -->",
+      "",
+      "</div>",
+      ""
+    ]
   }
 }
