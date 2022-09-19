@@ -1,0 +1,14 @@
+{
+  "bn'": {
+    "prefix": "bn",
+    "description": "",
+    "body": [
+      "\\$\\$",
+      "\\begin{aligned}",
+      "",
+      "\\end{aligned}",
+      "\\$\\$",
+      ""
+    ]
+  }
+}

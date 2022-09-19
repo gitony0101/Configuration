@@ -82,5 +82,29 @@
       "print(f\"When there is 3 freight pallet in the plane.\\nthe mean of the profit is {mean_profit_3}\")",
       ""
     ]
+  },
+  "npds": {
+    "prefix": "npds",
+    "description": "",
+    "body": [
+      "NUM_ROLLS = 101",
+      "",
+      "values = [1, 2, 3]",
+      "probs = [0.2,0.4,0.4]",
+      "",
+      "# Draw a weighted sample",
+      "sample = np.random.choice(values, NUM_ROLLS, p=probs)",
+      "sample",
+      ""
+    ]
+  },
+  "vu": {
+    "prefix": "vu",
+    "description": "",
+    "body": [
+      "#include <vector>",
+      "using namespace std;",
+      ""
+    ]
   }
 }

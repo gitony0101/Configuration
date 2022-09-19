@@ -161,9 +161,128 @@
     "command": "editor.action.inlineSuggest.commit",
     "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
   },
+  // {
+  //   "key": "tab",
+  //   "command": "-editor.action.inlineSuggest.commit",
+  //   "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
+  // },
   {
-    "key": "tab",
-    "command": "-editor.action.inlineSuggest.commit",
-    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
+    "key": "alt+f",
+    "command": "filesExplorer.findInFolder",
+    "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-filesExplorer.findInFolder",
+    "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "alt+cmd+q",
+    "command": "extension.beautifySql",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /sql/"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-extension.beautifySql",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /sql/"
+  },
+  {
+    "key": "shift+alt+d",
+    "command": "editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+d",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "shift+alt+r",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+  },
+  {
+    "key": "m",
+    "command": "-notebook.cell.changeToMarkdown",
+    "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'code'"
+  },
+  {
+    "key": "shift+' shift+enter",
+    "command": "notebook.cell.insertMarkdownCellAbove"
+  },
+  {
+    "key": "shift+'",
+    "args": " \" \" ",
+  },
+  {
+    "key": "shift+enter",
+    "command": "-markdown.extension.onShiftEnterKey",
+    "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "-markdown.extension.onCtrlEnterKey",
+    "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "ctrl+shift+escape",
+    "command": "language-julia.clearCurrentInlineResult",
+    "when": "editorLangId == 'juliamarkdown' || editorLangId == 'markdown' || editorTextFocus && juliaHasInlineResult && !editorHasSelection && !findWidgetVisible && !inSnippetMode && !isInEmbeddedEditor && !markerNavigationVisible && !onTypeRenameInputVisible && !parameterHintsVisible && !renameInputVisible && !suggestWidgetVisible && editorLangId == 'julia'"
+  },
+  {
+    "key": "escape",
+    "command": "-language-julia.clearCurrentInlineResult",
+    "when": "editorLangId == 'juliamarkdown' || editorLangId == 'markdown' || editorTextFocus && juliaHasInlineResult && !editorHasSelection && !findWidgetVisible && !inSnippetMode && !isInEmbeddedEditor && !markerNavigationVisible && !onTypeRenameInputVisible && !parameterHintsVisible && !renameInputVisible && !suggestWidgetVisible && editorLangId == 'julia'"
+  },
+  {
+    "key": "ctrl+shift+escape",
+    "command": "language-julia.clearCurrentInlineResult",
+    "when": "editorLangId == 'juliamarkdown' || editorTextFocus && juliaHasInlineResult && !editorHasSelection && !findWidgetVisible && !inSnippetMode && !isInEmbeddedEditor && !markerNavigationVisible && !onTypeRenameInputVisible && !parameterHintsVisible && !renameInputVisible && !suggestWidgetVisible && editorLangId == 'julia'"
+  },
+  {
+    "key": "escape",
+    "command": "-language-julia.clearCurrentInlineResult",
+    "when": "editorLangId == 'juliamarkdown' || editorTextFocus && juliaHasInlineResult && !editorHasSelection && !findWidgetVisible && !inSnippetMode && !isInEmbeddedEditor && !markerNavigationVisible && !onTypeRenameInputVisible && !parameterHintsVisible && !renameInputVisible && !suggestWidgetVisible && editorLangId == 'julia'"
+  },
+  {
+    "key": "ctrl+alt+enter",
+    "command": "language-julia.executeCell",
+    "when": "editorLangId == 'juliamarkdown' || editorLangId == 'markdown' || editorTextFocus && editorLangId == 'julia' && activeEditor != 'workbench.editor.notebook'"
+  },
+  {
+    "key": "alt+enter",
+    "command": "-language-julia.executeCell",
+    "when": "editorLangId == 'juliamarkdown' || editorLangId == 'markdown' || editorTextFocus && editorLangId == 'julia' && activeEditor != 'workbench.editor.notebook'"
+  },
+  {
+    "key": "ctrl+alt+o",
+    "command": "workbench.action.reopenWithEditor"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "editor.action.organizeImports",
+    "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+  },
+  {
+    "key": "shift+alt+o",
+    "command": "-editor.action.organizeImports",
+    "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
   }
 ]
