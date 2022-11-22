@@ -1,0 +1,14 @@
+jupyterlab-spellchecker
+testpath
+jupyter_contrib_nbextensions
+ghp-import
+mamba
+jupyter
+jupytext
+openpyxl
+yapf
+xlrd
+conda-tree
+jupyterlab_code_formatter
+sqlite
+zlib

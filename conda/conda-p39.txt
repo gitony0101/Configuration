@@ -1,0 +1,17 @@
+importlib_metadata
+matplotlib
+tabulate
+jupyterlab-spellchecker
+jupyter_contrib_nbextensions
+lz4-c
+mypy
+pcre
+jupyter
+autopep8
+gurobi
+pandas
+xlrd
+conda-tree
+jupyterlab_code_formatter
+multiprocess
+sqlite
