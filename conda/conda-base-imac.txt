@@ -1,0 +1,7 @@
+mamba
+ghp-import
+zlib
+jupyter-book
+tqdm
+sqlite
+conda-tree
