@@ -4,12 +4,13 @@ tabulate
 jupyterlab-spellchecker
 jupyter_contrib_nbextensions
 lz4-c
+pandas
 mypy
 pcre
 jupyter
 autopep8
 gurobi
-pandas
+tqdm
 xlrd
 conda-tree
 jupyterlab_code_formatter
