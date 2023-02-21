@@ -1,11 +1,10 @@
+multiprocess
+gurobi
 scikit-learn
 tabulate
 jupyterlab-spellchecker
 jupytext
-seaborn
-gurobi
 openpyxl
-jupyter_contrib_nbextensions
+seaborn
 jupyterlab_code_formatter
-multiprocess
 conda-tree
