@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../../floating-clock"
+		},
+		{
+			"path": "../../Coding-Crash/PyGuiQt"
 		}
 	],
 	"settings": {}
